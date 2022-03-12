@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mes Mangas</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+</head>
+<body onload="chargerGenre()">
+<div id="NavigateurLISTHTML"></div>
+<h3>Responsive(AJAX)</h3>
+<div id="divGenre"></div>
+<div id="divManga"></div>
+
+
+
+<script>
+    function chargerNav(){
+        $.get('header.php',function (reponse){
+            $("#NavigateurLISTHTML").html(reponse);
+        });
+    }
+    function chargerManga(idGenre){
+        $.get("LesMangasDeGenre.php?genre="+idGenre,function (reponse){
+            $("#divManga").html(reponse);
+        });
+    }
+    function chargerGenre(){
+        $.get('LesGenres.php',function (reponse){
+            $("#divGenre").html(reponse);
+            $("#champGenre").change(function (){
+                chargerManga($(this).val());
+            });
+        });
+    }
+    $(document).ready(function(){
+        chargerGenre();
+        chargerNav();
+
+    });
+
+    /*
+    //$('#TableManga').DataTable();
+        //$('#champGenre').val()
+    var httpRequest=new XMLHttpRequest();//On Supporte pas les vieu nav
+    var $Genre=document.getElementsByName('genre');
+    httpRequest.open('POST','ListeMangaResponsive.php',true)
+    httpRequest.send($Genre)
+    /*$(document).ready(function(){
+        $('#TableManga').DataTable();
+        $('#champGenre').val()
+    });
+    $(function () {
+        $('#formulaireGenre').bind('submit', function () {
+            $.ajax({
+                type: 'post',
+                url: 'post.php',
+                data: $('form').serialize(),
+                success: function () {
+                    alert('form was submitted');
+                }
+            });
+            return false;
+        });
+    });
+    function tableUpgrade(){
+        var $Genre=document.getElementsByName('genre');
+    }*/
+</script>
+</body>
+</html>

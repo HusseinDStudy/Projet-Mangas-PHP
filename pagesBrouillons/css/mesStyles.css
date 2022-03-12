@@ -1,0 +1,88 @@
+﻿ .img-responsive {
+    margin:0 auto;
+    witdh : auto;
+    height : 150px;
+  }
+.grandtitrelien{
+text-shadow: 1px 1px 2px red;
+text-align:center;
+font-size:2.5em;
+}
+
+.titre{
+background-color: blue;
+border-radius: 20px;
+height:200px;
+}
+.contour{
+   border:3px ;
+    solid: #ddd;
+}
+
+ .encadre{
+ border:none;
+ background-color:yellow;
+ text-align:center;
+ height:100px;
+ }
+ .titre2{
+ text-align:center;
+ text-shadow: 1px 1px 2px black;
+font-size:2em;
+ }
+ .ligneblanche{
+ background-color:transparent;
+ height:50px;;
+ }
+ .ligneblanche20{
+ border:none;
+ background-color:transparent;
+ height:20px;
+ }
+  .lignenoire{
+    height: 2px; 
+	color: #839D2D;
+	background-color: 
+	black; 
+	width: 100%; 
+	border: none;
+}	
+.boiteverte{
+ background-color: lightgreen;
+ border:3px solid #DDD;
+ height:150px;
+ }
+ .separateur{ 
+  text-align:left;
+ 
+ 
+}	
+.texte{
+  text-align:center;
+  text-shadow: 1px 1px 2px blue;
+ 
+  }
+  .boite60{
+  border:none; 
+  background-color:transparent ;
+  height:60px ;
+  }
+  .boite50{
+     border:none; 
+	 background-color: yellow;
+	 height:50px;
+	 }
+  .baspage{
+  text-align:center;
+   border:none;
+   background-color:yellow;
+  }
+  
+  .centrage{
+  text-align:center;
+  text-shadow: 1px 1px 2px blue;
+font-size:1em;
+  }
+ 
+
+  

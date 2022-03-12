@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" autoUpload="Always" serverName="TPCH2">
+    <serverData>
+      <paths name="TPCH2">
+        <serverdata>
+          <mappings>
+            <mapping deploy="Hussein DAJANI" local="$PROJECT_DIR$" web="/Hussein DAJANI" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myAutoUpload" value="ALWAYS" />
+  </component>
+</project>

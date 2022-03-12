@@ -1,0 +1,18 @@
+Si l'image n'est pas utilisée par un autre mange, il faut la supprimer du serveur sinon il faut la laisser.
+
+
+
+Modification de la base de données
+
+Ajout une table permettant de différencier les dessinateurs des scénaristes
+
+-Mettre à jour l’application pour tenir compte de cette modification
+
+-Avec cette nouvelle base de données,ajouter les formulaires manquants permettant de lister/modifier/supprimer les dessinateurs des scénaristes
+
+
+
+
+Affichage Ajax:
+
+La liste des mangas d’un genre est affichée en Ajax sous la liste de choix du genre
