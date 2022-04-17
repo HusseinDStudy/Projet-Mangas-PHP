@@ -81,4 +81,4 @@ Supprimer une Manga
 Modifier un Scénariste
 
 *   [GitHub](https://github.com/HusseinDStudy/Projet-Mangas-PHP)
-*   [Test](http://husseindajani.epizy.com/0.E4/PurePHP/Projet-Mangas-Hussein-DAJANI-PHP-master/)
+*   [Test](http://husseindajani.epizy.com/0.E4/PurePHP/Projet-Mangas-PHP/)
